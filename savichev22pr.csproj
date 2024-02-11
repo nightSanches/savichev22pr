@@ -34,6 +34,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -71,6 +74,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Resource\BtnRes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Pages\Main.xaml.cs">
@@ -103,8 +110,23 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Elements\" />
-    <Folder Include="Img\" />
-    <Folder Include="Resource\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\back.png" />
+    <Resource Include="Img\calendar.png" />
+    <Resource Include="Img\calls.png" />
+    <Resource Include="Img\del.png" />
+    <Resource Include="Img\in.png" />
+    <Resource Include="Img\logo.ico" />
+    <Resource Include="Img\logo.png" />
+    <Resource Include="Img\ok.png" />
+    <Resource Include="Img\out.png" />
+    <Resource Include="Img\people.png" />
+    <Resource Include="Img\plus.png" />
+    <Resource Include="Img\redac.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="logo.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
