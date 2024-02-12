@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "savichev22pr", "savichev22p
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassModule", "..\ClassModule\ClassModule.csproj", "{7CC87CBD-362C-430A-AB7B-25DE3ED4AF66}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassConnection", "..\ClassConnection\ClassConnection.csproj", "{0A7A4046-2944-43E1-B0EB-D0D0267855C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{7CC87CBD-362C-430A-AB7B-25DE3ED4AF66}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CC87CBD-362C-430A-AB7B-25DE3ED4AF66}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CC87CBD-362C-430A-AB7B-25DE3ED4AF66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A7A4046-2944-43E1-B0EB-D0D0267855C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A7A4046-2944-43E1-B0EB-D0D0267855C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A7A4046-2944-43E1-B0EB-D0D0267855C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A7A4046-2944-43E1-B0EB-D0D0267855C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
