@@ -74,6 +74,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\PagesUser\User_win.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Resource\BtnRes.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -82,6 +86,9 @@
   <ItemGroup>
     <Compile Include="Pages\Main.xaml.cs">
       <DependentUpon>Main.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PagesUser\User_win.xaml.cs">
+      <DependentUpon>User_win.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -127,6 +134,16 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassConnection\ClassConnection.csproj">
+      <Project>{0a7a4046-2944-43e1-b0eb-d0d0267855c9}</Project>
+      <Name>ClassConnection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassModule\ClassModule.csproj">
+      <Project>{7cc87cbd-362c-430a-ab7b-25de3ed4af66}</Project>
+      <Name>ClassModule</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
