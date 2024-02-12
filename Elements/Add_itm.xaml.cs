@@ -21,7 +21,6 @@ namespace savichev22pr.Elements
     /// </summary>
     public partial class Add_itm : UserControl
     {
-
         Page page_str;
         public Add_itm(Page _page_str)
         {

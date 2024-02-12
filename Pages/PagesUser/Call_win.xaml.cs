@@ -47,7 +47,7 @@ namespace savichev22pr.Pages.PagesUser
                 call_category_text.Items.Add(combitm);
                 ComboBoxItem combitm1 = new ComboBoxItem();
                 combitm1.Tag = 2;
-                combitm1.Content = "x";
+                combitm1.Content = "Входящий";
                 if (_call.category_call == 2) combitm1.IsSelected = true;
                 call_category_text.Items.Add(combitm1);
 

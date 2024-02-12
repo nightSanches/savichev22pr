@@ -38,18 +38,18 @@ namespace savichev22pr.Elements
                 string[] date1 = (dateloc1[0]).Split('.');
                 string[] date2 = (dateloc2[0]).Split('.');
 
-                System.DateTime dateStart = new DateTime(int.Parse(date1[2]),
+                DateTime dateStart = new DateTime(int.Parse(date1[2]),
                     int.Parse(date1[1]),
                     int.Parse(date1[0]),
                     int.Parse(dateloc1[1].Split(':')[0]),
                     int.Parse(dateloc1[1].Split(':')[1]), 0);
 
-                System.DateTime dateFinish = new DateTime(int.Parse(date2[2]),
+                DateTime dateFinish = new DateTime(int.Parse(date2[2]),
                     int.Parse(date2[1]),
                     int.Parse(date2[0]),
                     int.Parse(dateloc2[1].Split(':')[0]),
                     int.Parse(dateloc2[1].Split(':')[1]), 0);
-                System.TimeSpan dateEnd = dateFinish.Subtract(dateStart);
+                TimeSpan dateEnd = dateFinish.Subtract(dateStart);
 
                 time_call_text.Content = "Продолжительность звонка:" + dateEnd.ToString();
                 number_call_text.Content = "Номер телефона: " + user_loc.phone_num.ToString();

@@ -22,7 +22,7 @@
                     <SolidColorBrush Color="#FF2C2C2C" Opacity="1.0"/>
                 </Border.Background>
             </Border>
-            <Image x:Name="img" Source="//Img/logo.png" Margin="19,8,0,0" HorizontalAlignment="Left" Width="41" Height="42" VerticalAlignment="Top"/>
+            <Image x:Name="img" Source="/Img/logo.png" Margin="19,8,0,0" HorizontalAlignment="Left" Width="41" Height="42" VerticalAlignment="Top"/>
         </Grid>
 
         <Grid Margin="10,77,10,0" Height="51" VerticalAlignment="Top">
@@ -43,19 +43,20 @@
             </StackPanel>
         </Grid>
 
-        <Border>
+        <Border Margin="10,133,10,10" CornerRadius="10,10,10,10">
             <Border.Background>
                 <SolidColorBrush Color="White" Opacity="1.0"/>
-                </Border.Background>
-                <Grid MinHeight="300">
-                    <ScrollViewer x:Name="scroll_main">
-                        <StackPanel x:Name="parrent">
+            </Border.Background>
+            
+            <Grid MinHeight="300">
+                <ScrollViewer x:Name="scroll_main">
+                    <StackPanel x:Name="parrent">
                             
-                        </StackPanel>
-                    </ScrollViewer>
+                    </StackPanel>
+                </ScrollViewer>
                     
-                    <Frame x:Name="frame_main" NavigationUIVisibility="Hidden" Visibility="Hidden" Opacity="0"/>
-                </Grid>
+                <Frame x:Name="frame_main" NavigationUIVisibility="Hidden" Visibility="Hidden" Opacity="0"/>
+            </Grid>
         </Border>
     </Grid>
 </Page>
